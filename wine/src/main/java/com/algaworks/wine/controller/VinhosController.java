@@ -4,8 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/produtos")
-public class ProdutosController {
+@RequestMapping("/vinhos")
+public class VinhosController {
 
 	@RequestMapping("/novo")
 	public String novo() {
@@ -14,7 +14,7 @@ public class ProdutosController {
 	
 	@RequestMapping
 	public String pesquisa() {
-		return "/produto/PesquisaProdutos";
+		return "/vinho/ListagemVinhos";
 	}
 	
 }
